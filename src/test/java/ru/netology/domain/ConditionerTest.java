@@ -11,7 +11,14 @@ class ConditionerTest {
     @Test
     void increaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
-        int maxTemperature = 30;
+
+
+
+
+
+
+
+
 
 
     }
