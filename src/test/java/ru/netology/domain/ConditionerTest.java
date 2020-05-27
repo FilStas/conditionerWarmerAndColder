@@ -9,18 +9,36 @@ import static org.junit.jupiter.api.Assertions.*;
 class ConditionerTest {
 
     @Test
-    void increaseCurrentTemperature() {
+    void shouldIncreaseCurrentTemperatureToMax() {
         Conditioner conditioner = new Conditioner();
+        conditioner.setCurrentTemperature(30);
+        conditioner.increaseCurrentTemperature();
+        assertEquals(30,conditioner.getCurrentTemperature());
+    }
 
+    @Test
+    void shouldDecreaseCurrentTemperatureToMin() {
+        Conditioner conditioner = new Conditioner();
+        conditioner.setCurrentTemperature(16);
+        conditioner.decreaseCurrentTemperature();
+        assertEquals(16,conditioner.getCurrentTemperature());
+    }
 
+    @Test
+    void shouldIncreaseCurrentTemperature(){
+        Conditioner conditioner = new Conditioner();
+        conditioner.setCurrentTemperature(20);
+        conditioner.increaseCurrentTemperature();
+        assertEquals(21,conditioner.getCurrentTemperature());
 
+    }
 
-
-
-
-
-
-
+    @Test
+    void shouldDecreaseCurrentTemperature() {
+        Conditioner conditioner = new Conditioner();
+        conditioner.setCurrentTemperature(20);
+        conditioner.decreaseCurrentTemperature();
+        assertEquals(19,conditioner.getCurrentTemperature());
     }
 }
 
