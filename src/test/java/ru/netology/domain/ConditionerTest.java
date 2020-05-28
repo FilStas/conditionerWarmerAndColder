@@ -27,18 +27,18 @@ class ConditionerTest {
     @Test
     void shouldIncreaseCurrentTemperature(){
         Conditioner conditioner = new Conditioner();
-        conditioner.setCurrentTemperature(20);
+        conditioner.setCurrentTemperature(16);
         conditioner.increaseCurrentTemperature();
-        assertEquals(21,conditioner.getCurrentTemperature());
+        assertEquals(17,conditioner.getCurrentTemperature());
 
     }
 
     @Test
     void shouldDecreaseCurrentTemperature() {
         Conditioner conditioner = new Conditioner();
-        conditioner.setCurrentTemperature(20);
+        conditioner.setCurrentTemperature(30);
         conditioner.decreaseCurrentTemperature();
-        assertEquals(19,conditioner.getCurrentTemperature());
+        assertEquals(29,conditioner.getCurrentTemperature());
     }
 }
 
