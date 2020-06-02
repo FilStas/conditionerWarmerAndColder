@@ -4,7 +4,7 @@ public class Conditioner {
     private String name;
     private int maxTemperature = 30;
     private int minTemperature = 16;
-    private int currentTemperature;
+    private int currentTemperature = 22;
     private boolean on;
 
     public void setCurrentTemperature(int currentTemperature) {
@@ -31,26 +31,9 @@ public class Conditioner {
         currentTemperature--;
     }
 
-    public int getMaxTemperature() {
-        return maxTemperature;
-    }
-
-    public void setMaxTemperature(int maxTemperature) {
-        this.maxTemperature = maxTemperature;
-    }
-
-    public int getMinTemperature() {
-        return minTemperature;
-    }
-
-    public void setMinTemperature(int minTemperature) {
-        this.minTemperature = minTemperature;
-    }
-
     public int getCurrentTemperature() {
         return currentTemperature;
     }
 
 
 }
-
