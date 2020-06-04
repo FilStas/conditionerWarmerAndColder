@@ -4,7 +4,7 @@ public class Conditioner {
     private String name;
     private int maxTemperature = 30;
     private int minTemperature = 16;
-    private int currentTemperature = 22;
+    private int currentTemperature;
     private boolean on;
 
     public void setCurrentTemperature(int currentTemperature) {
@@ -33,6 +33,22 @@ public class Conditioner {
 
     public int getCurrentTemperature() {
         return currentTemperature;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isOn() {
+        return on;
+    }
+
+    public void setOn(boolean on) {
+        this.on = on;
     }
 
 

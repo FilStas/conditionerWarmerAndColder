@@ -54,7 +54,7 @@ class ConditionerTest {
 
         conditioner.setCurrentTemperature(31);
 
-        assertEquals(22, conditioner.getCurrentTemperature());
+        assertEquals(0, conditioner.getCurrentTemperature());
     }
 
     @Test
@@ -63,7 +63,7 @@ class ConditionerTest {
 
         conditioner.setCurrentTemperature(15);
 
-        assertEquals(22, conditioner.getCurrentTemperature());
+        assertEquals(0, conditioner.getCurrentTemperature());
     }
 }
 
